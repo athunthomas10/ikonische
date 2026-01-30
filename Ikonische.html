@@ -1,0 +1,606 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ikonische - Residential Interiors Catalogue</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 1.6;
+color: #333;
+}
+
+/* Header & Navigation */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+color: white;
+padding: 20px 0;
+position: sticky;
+top: 0;
+z-index: 100;
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-content {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.logo-img {
+height: 45px;
+width: auto;
+}
+
+.logo-text {
+font-size: 24px;
+font-weight: bold;
+letter-spacing: 2px;
+}
+</parameter>
+
+nav {
+display: flex;
+gap: 30px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+nav a:hover {
+color: #e8b74a;
+}
+
+/* Hero Section */
+.hero {
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+color: white;
+text-align: center;
+padding: 80px 20px;
+}
+
+.hero h1 {
+font-size: 48px;
+margin-bottom: 20px;
+}
+
+.hero p {
+font-size: 20px;
+margin-bottom: 30px;
+opacity: 0.9;
+}
+
+.cta-button {
+display: inline-block;
+background: #e8b74a;
+color: #1a1a2e;
+padding: 15px 40px;
+border-radius: 50px;
+text-decoration: none;
+font-weight: bold;
+transition: all 0.3s;
+cursor: pointer;
+border: none;
+}
+
+.cta-button:hover {
+background: #d4a535;
+transform: translateY(-3px);
+box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* About Section */
+.about {
+background: white;
+padding: 60px 20px;
+}
+
+.section-container {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.section-title {
+text-align: center;
+font-size: 36px;
+margin-bottom: 40px;
+color: #1a1a2e;
+}
+
+.about-content {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 40px;
+align-items: center;
+}
+
+.about-text h2 {
+font-size: 28px;
+color: #667eea;
+margin-bottom: 20px;
+}
+
+.about-text p {
+margin-bottom: 15px;
+line-height: 1.8;
+color: #555;
+}
+
+.stats {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 30px;
+margin-top: 30px;
+}
+
+.stat-box {
+background: #f5f5f5;
+padding: 20px;
+border-radius: 10px;
+border-left: 4px solid #667eea;
+}
+
+.stat-number {
+font-size: 32px;
+font-weight: bold;
+color: #667eea;
+}
+
+.stat-label {
+color: #666;
+margin-top: 5px;
+}
+
+/* Services Section */
+.services {
+background: #f9f9f9;
+padding: 60px 20px;
+}
+
+.services-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 30px;
+}
+
+.service-card {
+background: white;
+padding: 30px;
+border-radius: 10px;
+text-align: center;
+box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+transition: all 0.3s;
+}
+
+.service-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 15px 30px rgba(102,126,234,0.2);
+}
+
+.service-icon {
+font-size: 48px;
+margin-bottom: 20px;
+}
+
+.service-card h3 {
+font-size: 22px;
+color: #1a1a2e;
+margin-bottom: 15px;
+}
+
+.service-card p {
+color: #666;
+line-height: 1.6;
+}
+
+/* Portfolio Section */
+.portfolio {
+background: white;
+padding: 60px 20px;
+}
+
+.portfolio-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 25px;
+}
+
+.portfolio-item {
+background: #f5f5f5;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+transition: all 0.3s;
+}
+
+.portfolio-item:hover {
+transform: scale(1.03);
+box-shadow: 0 15px 30px rgba(102,126,234,0.2);
+}
+
+.portfolio-image {
+width: 100%;
+height: 250px;
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+font-size: 48px;
+}
+
+.portfolio-content {
+padding: 20px;
+}
+
+.portfolio-content h4 {
+font-size: 20px;
+color: #1a1a2e;
+margin-bottom: 10px;
+}
+
+.portfolio-content p {
+color: #666;
+font-size: 14px;
+}
+
+/* Design Styles Section */
+.styles {
+background: #f9f9f9;
+padding: 60px 20px;
+}
+
+.styles-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+}
+
+.style-card {
+background: white;
+padding: 25px;
+border-radius: 8px;
+text-align: center;
+box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.style-card h4 {
+color: #667eea;
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+.style-card p {
+color: #666;
+font-size: 13px;
+}
+
+/* Contact Section */
+.contact {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+color: white;
+padding: 60px 20px;
+text-align: center;
+}
+
+.contact h2 {
+font-size: 36px;
+margin-bottom: 30px;
+}
+
+.contact-info {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 30px;
+margin-bottom: 40px;
+}
+
+.contact-item {
+background: rgba(255,255,255,0.1);
+padding: 25px;
+border-radius: 8px;
+backdrop-filter: blur(10px);
+}
+
+.contact-item h4 {
+font-size: 20px;
+margin-bottom: 10px;
+color: #e8b74a;
+}
+
+.contact-item p {
+font-size: 16px;
+}
+
+.contact-item a {
+color: #e8b74a;
+text-decoration: none;
+}
+
+.contact-item a:hover {
+text-decoration: underline;
+}
+
+/* Footer */
+footer {
+background: #0f0f23;
+color: white;
+text-align: center;
+padding: 30px 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+nav {
+flex-direction: column;
+gap: 10px;
+display: none;
+}
+
+.hero h1 {
+font-size: 32px;
+}
+
+.hero p {
+font-size: 16px;
+}
+
+.about-content {
+grid-template-columns: 1fr;
+}
+
+.section-title {
+font-size: 28px;
+}
+}
+</style>
+</head>
+<body>
+<!-- Header -->
+<header>
+<div class="header-content">
+<div class="logo">IKONISCHE</div>
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+<h1>Transform Your Living Space</h1>
+<p>Crafting Beautiful Residential Interiors Since 2022</p>
+<button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Let's Get Connected</button>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+<div class="section-container">
+<h2 class="section-title">About Ikonische</h2>
+<div class="about-content">
+<div class="about-text">
+<h2>Excellence in Residential Design</h2>
+<p>Ikonische Private Limited is a premium residential interior design firm dedicated to creating spaces that reflect your unique lifestyle and personality. With expertise in modern, contemporary, and traditional design aesthetics, we transform houses into homes.</p>
+<p>Our team of experienced designers and craftspeople work closely with clients to understand their vision, bringing creative solutions to every project with attention to detail and quality materials.</p>
+<div class="stats">
+<div class="stat-box">
+<div class="stat-number">4+</div>
+<div class="stat-label">Years of Experience</div>
+</div>
+<div class="stat-box">
+<div class="stat-number">55+</div>
+<div class="stat-label">Happy Clients</div>
+</div>
+<div class="stat-box">
+<div class="stat-number">100+</div>
+<div class="stat-label">Projects Completed</div>
+</div>
+<div class="stat-box">
+<div class="stat-number">94%</div>
+<div class="stat-label">Satisfaction Rate</div>
+</div>
+</div>
+</div>
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; height: 400px; display: flex; align-items: center; justify-content: center; color: white; font-size: 64px;">
+🏠
+</div>
+</div>
+</div>
+</section>
+
+<!-- Services Section -->
+<section class="services" id="services">
+<div class="section-container">
+<h2 class="section-title">Our Services</h2>
+<div class="services-grid">
+<div class="service-card">
+<div class="service-icon">🎨</div>
+<h3>Space Planning</h3>
+<p>Maximize functionality and flow with strategic space planning tailored to your lifestyle needs.</p>
+</div>
+<div class="service-card">
+<div class="service-icon">🛋️</div>
+<h3>Furniture & Styling</h3>
+<p>Curated furniture selections and interior styling that elevate your living environment.</p>
+</div>
+<div class="service-card">
+<div class="service-icon">🎯</div>
+<h3>Color Consultation</h3>
+<p>Expert color palette selection that creates harmony and reflects your personal aesthetic.</p>
+</div>
+<div class="service-card">
+<div class="service-icon">💡</div>
+<h3>Lighting Design</h3>
+<p>Strategic lighting solutions that enhance ambiance and functionality throughout your home.</p>
+</div>
+<div class="service-card">
+<div class="service-icon">🪟</div>
+<h3>Material Selection</h3>
+<p>Premium material choices ensuring durability, quality, and aesthetic appeal.</p>
+</div>
+<div class="service-card">
+<div class="service-icon">🔨</div>
+<h3>Full Execution</h3>
+<p>Complete project execution from design to installation with professional craftsmanship.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Design Styles Section -->
+<section class="styles" id="styles">
+<div class="section-container">
+<h2 class="section-title">Design Styles We Specialize In</h2>
+<div class="styles-grid">
+<div class="style-card">
+<h4>Modern Minimalist</h4>
+<p>Clean lines, neutral palettes, and functional beauty</p>
+</div>
+<div class="style-card">
+<h4>Contemporary</h4>
+<p>Current trends with timeless elegance</p>
+</div>
+<div class="style-card">
+<h4>Traditional</h4>
+<p>Classic warmth with sophisticated detailing</p>
+</div>
+<div class="style-card">
+<h4>Scandinavian</h4>
+<p>Light, airy spaces with natural materials</p>
+</div>
+<div class="style-card">
+<h4>Industrial</h4>
+<p>Raw textures and exposed elements</p>
+</div>
+<div class="style-card">
+<h4>Japandi</h4>
+<p>Harmonious blend of Japanese and Scandinavian design</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Portfolio Section -->
+<section class="portfolio" id="portfolio">
+<div class="section-container">
+<h2 class="section-title">Featured Projects</h2>
+<div class="portfolio-grid">
+<div class="portfolio-item">
+<div class="portfolio-image">🛏️</div>
+<div class="portfolio-content">
+<h4>Master Bedroom Redesign</h4>
+<p>Serene bedroom transformation with custom built-ins and ambient lighting</p>
+</div>
+</div>
+<div class="portfolio-item">
+<div class="portfolio-image">🍽️</div>
+<div class="portfolio-content">
+<h4>Modern Kitchen & Dining</h4>
+<p>Contemporary kitchen renovation with open dining integration</p>
+</div>
+</div>
+<div class="portfolio-item">
+<div class="portfolio-image">🛋️</div>
+<div class="portfolio-content">
+<h4>Living Room Makeover</h4>
+<p>Sophisticated living space with curated furnishings and color scheme</p>
+</div>
+</div>
+<div class="portfolio-item">
+<div class="portfolio-image">🚿</div>
+<div class="portfolio-content">
+<h4>Luxury Bathroom Suite</h4>
+<p>Spa-inspired bathroom with premium fixtures and finishes</p>
+</div>
+</div>
+<div class="portfolio-item">
+<div class="portfolio-image">👶</div>
+<div class="portfolio-content">
+<h4>Kids Room Design</h4>
+<p>Playful yet functional kids space with smart storage solutions</p>
+</div>
+</div>
+<div class="portfolio-item">
+<div class="portfolio-image">📚</div>
+<div class="portfolio-content">
+<h4>Home Office Studio</h4>
+<p>Productive workspace design with ergonomic and aesthetic appeal</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+<div class="section-container">
+<h2>Get in Touch</h2>
+<p style="margin-bottom: 40px; font-size: 18px;">Ready to transform your living space?</p>
+<div class="contact-info">
+<div class="contact-item">
+<h4>📞 Phone</h4>
+<p><a href="tel:7899996575">+91 7899996575</a></p>
+</div>
+<div class="contact-item">
+<h4>📧 Email</h4>
+<p><a href="mailto:info@ikonische.com">info@ikonische.com</a></p>
+</div>
+<div class="contact-item">
+<h4>📍 Location</h4>
+<p>Bengaluru, Karnataka, India</p>
+</div>
+</div>
+<a href="https://wa.me/917899996575?
+text=Hi%20Ikonische%20team%2C%0AI%27m%20interested%20in%20residential%20interior%20design%20services.%0ACan%20we%20discuss%20my%20project%3F%20🏠" 
+class="cta-button" 
+target="_blank" 
+rel="noopener noreferrer">
+💬 Connect us on WhatsApp
+</a>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>&copy; 2026 Ikonische Private Limited. All rights reserved. | Residential Interior Design Excellence</p>
+</footer>
+
+<script>
+// Smooth scrolling for navigation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+const href = this.getAttribute('href');
+if (href !== '#') {
+e.preventDefault();
+const element = document.querySelector(href);
+if (element) {
+element.scrollIntoView({ behavior: 'smooth' });
+}
+}
+});
+});
+</script>
+</body>
+</html>
